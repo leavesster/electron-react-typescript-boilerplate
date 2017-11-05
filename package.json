@@ -1,0 +1,44 @@
+{
+  "name": "electron-react-typescript-boilerplate",
+  "version": "0.1.0",
+  "description": "electron-react-typescript",
+  "author": "leavesster",
+  "homepage": "https://github.com/leavesster/electron-react-typescript-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leavesster/electron-react-typescript-boilerplate.git"
+  },
+  "license": "MIT",
+  "main": "out/main.js",
+  "scripts": {
+    "prod": "webpack --config webpack.build.config.js && electron --noDevServer .",
+    "dev": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
+    "build": "rimraf out && tsc && webpack --config webpack.build.config.js",
+    "package": "webpack --config webpack.build.config.js",
+    "postpackage": "electron-packager ./ --out=./builds"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "babili-webpack-plugin": "^0.1.2",
+    "css-loader": "^0.28.1",
+    "electron": "^1.7.8",
+    "electron-packager": "^9.1.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.28.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^3.1.0",
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
+}

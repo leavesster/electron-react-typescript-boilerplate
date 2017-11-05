@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "sourceMap": true,
+        "jsx": "react",
+        "outDir": "./out",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "out"
+    ]
+}
